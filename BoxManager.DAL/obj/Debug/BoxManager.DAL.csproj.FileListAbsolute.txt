@@ -1,0 +1,5 @@
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\BoxManager.DAL.dll
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\BoxManager.DAL.pdb
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.csprojAssemblyReference.cache
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.dll
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.pdb
