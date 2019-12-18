@@ -41,7 +41,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoginService.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\NivelModel.cs" />
+    <Compile Include="Models\TipoConteoModel.cs" />
+    <Compile Include="Models\WodModel.cs" />
+    <Compile Include="NivelService.cs" />
+    <Compile Include="TipoConteoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ClienteService.cs" />
+    <Compile Include="WodClienteService.cs" />
+    <Compile Include="WodService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BoxManager.DAL\BoxManager.DAL.csproj">
+      <Project>{A630B242-3FF1-48E5-ADCE-E9457E303AC2}</Project>
+      <Name>BoxManager.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BoxManager.DO\BoxManager.DO.csproj">
+      <Project>{F0CD41BC-02F3-4631-8C88-566133C2E29E}</Project>
+      <Name>BoxManager.DO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

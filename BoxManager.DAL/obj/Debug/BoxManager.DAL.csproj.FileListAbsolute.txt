@@ -3,3 +3,11 @@ C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\BoxManager.
 C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.csprojAssemblyReference.cache
 C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.dll
 C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.pdb
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\BoxManager.DAL.dll.config
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\BoxManager.DO.dll
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\EntityFramework.dll
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\BoxManager.DO.pdb
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\EntityFramework.xml
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\rug18\Documents\BoxManager-Progra5\BoxManager.DAL\obj\Debug\BoxManager.DAL.csproj.CopyComplete
