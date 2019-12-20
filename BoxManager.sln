@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29609.76
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxManager.BS", "BoxManager.BS\BoxManager.BS.csproj", "{85178C41-C47D-4BA0-AEC9-AB47C737745D}"
 EndProject
@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxManager.DAL", "BoxManage
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxManager.DO", "BoxManager.DO\BoxManager.DO.csproj", "{F0CD41BC-02F3-4631-8C88-566133C2E29E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxManager.UI", "WebApplication1\BoxManager.UI.csproj", "{3227C30F-04E5-422D-B4BB-97A60488FAB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoxManager.UI", "BoxManager.UI\BoxManager.UI.csproj", "{3227C30F-04E5-422D-B4BB-97A60488FAB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,19 +1,45 @@
 ﻿using BoxManager.DO.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 
 namespace BoxManager.DAL
 {
     public class WodDAL : ICRUD<wod>, IGetAll<wod>
     {
-        public void Delete(wod entity)
+        public void Delete(int wodId)
         {
-            throw new NotImplementedException();
+            using (var entities = new BoxManagerEntities())
+            {
+                var wod = entities.wods.FirstOrDefault(w => w.id == wodId);
+                if (wod != null)
+                {
+                    entities.wods.Remove(wod);
+                    entities.SaveChanges();
+                }
+            }
         }
 
-        public List<wod> GetAll(int id)
+        public wod Get(int wodId)
         {
-            throw new NotImplementedException();
+            using (var entities = new BoxManagerEntities())
+            {
+                var wod = entities.wods.FirstOrDefault(w => w.id == wodId);
+                return wod;
+            }
+        }
+
+        public List<wod> GetAll(int tenantId)
+        {
+            using (var entities = new BoxManagerEntities())
+            {
+                var wods = entities.wods.Where(w => w.idTenant == tenantId)
+                    .Include("nivel1")
+                    .Include("tipoConteo1")
+                    .ToList();
+                return wods;
+            }
         }
 
         public void Insert(wod entity)
@@ -27,7 +53,18 @@ namespace BoxManager.DAL
 
         public void Update(wod entity)
         {
-            throw new NotImplementedException();
+            using (var entities = new BoxManagerEntities())
+            {
+                var wod = entities.wods.FirstOrDefault(w => w.id == entity.id);
+                if (wod != null)
+                {
+                    wod.descripcion = entity.descripcion;
+                    wod.fecha = entity.fecha;
+                    wod.nivel = entity.nivel;
+                    wod.tipoConteo = entity.tipoConteo;
+                    entities.SaveChanges();
+                }
+            }
         }
     }
 }

@@ -1,18 +1,17 @@
-﻿using BoxManager.BS.Models;
-using BoxManager.DAL;
+﻿using BoxManager.DAL;
 
 namespace BoxManager.BS
 {
     public class LoginService
     {
-        public int Login(LoginModel loginModel) 
+        public int Login(string usuario, string password) 
         {
             var tenantId = -1;
 
-            var usuario = new AdministradorDAL().GetAdministrador(loginModel.Usuario);
-            if (usuario != null && usuario.contrasenia == loginModel.Password) 
+            var dbUsuario = new AdministradorDAL().GetAdministrador(usuario);
+            if (dbUsuario != null && dbUsuario.contrasenia == password) 
             {
-                tenantId = usuario.idTenant;
+                tenantId = dbUsuario.idTenant;
             }
 
             return tenantId;

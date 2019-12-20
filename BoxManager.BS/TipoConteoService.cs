@@ -1,24 +1,23 @@
-﻿using BoxManager.BS.Models;
-using BoxManager.DAL;
+﻿using BoxManager.DAL;
 using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace BoxManager.BS
 {
     public class TipoConteoService
     {
-        public List<TipoConteoModel> GetByTenantId(int tenantIdId)
+        public List<SelectListItem> GetByTenantId(int tenantIdId)
         {
             var tipoConteoDAL = new TipoConteoDAL();
             var tiposConteoEntities = tipoConteoDAL.GetAll(tenantIdId);
 
-            var tiposConteo = new List<TipoConteoModel>();
+            var tiposConteo = new List<SelectListItem>();
             foreach (var tipoConteo in tiposConteoEntities)
             {
-                tiposConteo.Add(new TipoConteoModel()
+                tiposConteo.Add(new SelectListItem
                 {
-                    Id = tipoConteo.id,
-                    Nombre = tipoConteo.nombre,
-                    TenantId = tipoConteo.idTenant
+                    Value = tipoConteo.id.ToString(),
+                    Text = tipoConteo.nombre
                 });
             }
 

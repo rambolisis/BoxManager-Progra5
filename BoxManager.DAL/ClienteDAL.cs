@@ -1,28 +1,18 @@
 ﻿using BoxManager.DO.Interfaces;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace BoxManager.DAL
 {
-    public class ClienteDAL : ICRUD<cliente>, IGetAll<cliente>
+    public class ClienteDAL :  IGetAll<cliente>
     {
-        public void Delete(cliente entity)
+        public List<cliente> GetAll(int tenantId)
         {
-            throw new System.NotImplementedException();
-        }
-
-        public List<cliente> GetAll(int id)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Insert(cliente entity)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void Update(cliente entity)
-        {
-            throw new System.NotImplementedException();
+            using (var entities = new BoxManagerEntities())
+            {
+                var clientes = entities.clientes.Where(t => t.idTenant == tenantId).ToList();
+                return clientes;
+            }
         }
     }
 }

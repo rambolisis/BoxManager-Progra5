@@ -10,6 +10,6 @@ namespace BoxManager.DO.Interfaces
     {
         void Insert(T entity);
         void Update(T entity);
-        void Delete(T entity);
+        void Delete(int entityId);
     }
 }
